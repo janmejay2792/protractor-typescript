@@ -11,6 +11,7 @@ Remove the Index FIle
 ***************************************************
 
 Add All NodeNodule though COmmand
+Install npm
 npm install -g protractor
 
 webdriver-manager update	
@@ -22,3 +23,12 @@ npm i webdriver-manager -g
 // Reading The XL in Protractor
 npm i xlsx
 npm install appium --chromedriver_version="2.16"
+
+
+Run Test cars
+
+Npm test
+
+
+Simple file is
+Protractor fileconf.js
