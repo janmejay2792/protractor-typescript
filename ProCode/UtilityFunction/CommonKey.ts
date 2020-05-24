@@ -3,14 +3,8 @@ import { browser,element, by } from "protractor";
  
 
 export class CommonKey{
-
- 
- 
-
     getByType(locatorType:any){
-
         locatorType=locatorType.toLowerCase()
-
         if (locatorType == "id"){
             return by.id
         }
@@ -52,31 +46,20 @@ export class CommonKey{
         }
     }
  
-
     elementClick(locator:any, locatorType:any){
         try {
             this.waitForElement(locator,locatorType);
             let element:any= this.getElement(locator, locatorType)
             element.click()
         } catch (error) {
-            
-
         }
-
     }
 
- 
-
     elementSendKey(locator:any,locatorType:any,value:any){
-
         try {
-
             this.waitForElement(locator,locatorType);
-
             let element:any = this.getElement(locator, locatorType)
-
             element.sendKeys(value)
-
         } catch (error) {
         }
     }
@@ -87,17 +70,8 @@ export class CommonKey{
            let EC=browser.ExpectedConditions;
            browser.wait(EC.visibilityOf(element));
         } catch (error) {
-
-            
-
         }
-
- 
-
     }
-
- 
-
 }
 
  
