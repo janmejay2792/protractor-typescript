@@ -4,7 +4,8 @@ var protractor_1 = require("protractor");
 var HtmlReporter = require('protractor-beautiful-reporter');
 // var HtmlReporter = require('protractor-html-screenshot-reporter');
 exports.config = {
-    seleniumAddress: 'http://localhost:4444/wd/hub',
+    // seleniumAddress: 'http://localhost:4444/wd/hub',
+    directConnect: true,
     capabilities: {
         browserName: 'chrome',
         // chromeOptions: {
@@ -17,7 +18,7 @@ exports.config = {
     framework: 'jasmine2',
     // specs: ['./specs/LufPageDataTs.js'],
     suites: {
-        regression: ['./specs/LufPageDataTs.js']
+        regression: ['./specs/DropDownTestcase.js']
     },
     jasmineNodeOpts: {
         defaultTimeoutInterval: 90000
